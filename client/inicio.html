@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial scale = 1.0">
+    <title>Login</title>
+    <link rel="icon" href="./components/img/sudokuL.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./index.css">
+    <script src="func/inicio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <fieldset id = "maxField">
+
+        <fieldset id = "Cadastro">
+        <legend>Cadastro</legend>
+        <form id = "cadastroForm">
+          <p>
+          <label for = "">Usuário:</label>
+          <input type = "text" id = "cadastroUsuarioNome"></input>
+          </p>
+          
+          <p>
+          <label for = "">Senha:</label>
+          <input type = "password" id = "cadastroUsuarioSenha"></input>
+          </p>
+  
+          <button type = "submit">Criar usuário</button>
+        </form>
+        </fieldset>
+  
+        <fieldset id = "Login">
+        <legend>Login</legend>
+        <form id = "loginUsuarioForm">
+          <p>
+            <label for = "">Usuário:</label>
+            <input type = "text" id = "LusuarioNome"></input>
+          </p>
+  
+          <p>
+            <label for = "">Senha:</label>
+            <input type = "password" id = "LusuarioSenha"></input>
+          </p>
+  
+          <button type = "submit">Entrar</button>
+  
+        </form>
+        <!--{mensagemErro && (<p id = "LoginInvalido">{ mensagemErro }</p>)}-->
+        </fieldset>
+  
+        </fieldset>
+</body>

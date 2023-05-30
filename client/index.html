@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial scale = 1.0">
+    <title>Sudoku - A3</title>
+    <link rel="icon" href="./components/img/sudokuL.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./index.css">
+    <script src = "func/sudoku.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class = "navegador">
+            <a href="#" class="navegador-logo">
+                Sudoku 
+            </a>
+        <div class = "ativar-modo-escuro" id="ativar-modo-escuro">
+            <i class = "bx bx-sun"></i>
+            <i class = "bx bx-moon"></i>
+        </div>
+        <div class = "ativar-modo-escuro" id = "terminar-sessao" onclick = "terminarSessao()">
+            <i class= "bx bx-log-out-circle"></i>
+        </div>
+    </nav>
+
+    <div class = "sudoPratico">
+    <aside>
+        <!-- Gravar recorde -->
+        <div class = "acionar-leaderboard" onclick = "gravarRecordeDisplay()">[Gravar recorde]</div>
+        <form class = "nome-leaderboard" id = "abrir-recorde" style = "display: none;">
+            <p>
+                <label for = "">Usuário:</label>
+                <input type = "text" id = "gravarUsuarioNome"></input>
+            </p>
+
+            <button type = "submit" class = "botao-leaderboard">Gravar recorde</button>
+        </form>
+        <!-- Deletar recorde/usuário -->
+        <div class = "deletar-leaderboard" onclick = "deletarRecordeDisplay()">[Apagar recorde]</div>
+        <form class = "nome-deletar-leaderboard" id = "abrir-deletar-recorde" style = "display: none;">
+            <p>
+                <label for = "">Usuário:</label>
+                <input type = "text" id = "deletarUsuarioNome"></input>
+            </p>
+
+            <button type = "submit" class = "botao-deletar-leaderboard">Apagar recorde</button>
+        </form>
+        <!-- Observar recorde -->
+        <div class = "observar-leaderboard" onclick = "observarRecordeDisplay()">[Acessar recorde]</div>
+        <form class = "nome-observar-leaderboard" id = "abrir-observar-recorde" style = "display: none;">
+            <p>
+                <label for = "">Usuário:</label>
+                <input type = "text" id = "observarUsuarioNome"></input>
+            </p>
+
+            <button type = "submit" class = "botao-observar-leaderboard">Mostrar recorde</button>
+            <p id = "nomeObservarUsuario" class = "nome-usuario-escolhido-leaderboard"></p>
+            <p id = "vitoriasObservarUsuario" class = "vitorias-usuario-escolhido-leaderboard"></p>
+        </form>
+    </aside>
+    <h2 class = "erroDisplay">Erros: <span id = "erros">0</span></h2>
+    <hr>
+    <br>
+    <div id = "grade"></div>
+    <br>
+    <div id = "digitos"></div>
+    <button id = "reiniciar">Reiniciar partida</button>
+    </div>
+
+    <script src = "func/darkM.js"></script>
+</div>
+</body>
+</html> 

@@ -1,0 +1,212 @@
+@font-face {
+  font-family: Sudoku;
+  src: url("./components/font/Sudoku.ttf"); 
+}
+
+#erros {
+  color: crimson; 
+  font-size: 30px;
+}
+
+#grade {
+  width: 500px;
+  height: 500px;
+  /*background-color: yellow;*/
+  margin: 0 auto; 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#digitos {
+  width: 500px;
+  height: 75px;
+  background-color: #fff; 
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.erroDisplay {
+  color: crimson; 
+}
+
+.temaEscuro {
+  background: #2a2a38; 
+  background-color: #1a1a2e; 
+  color: #6a6a6a; 
+}
+
+.ativar-modo-escuro {
+  color:#00aeef; 
+  font-size: 3rem; 
+  cursor: pointer; 
+}
+
+nav {
+  background-color: #fff;
+  color: #000; 
+  position: fixed;
+  top: 0px; 
+  width: 100%; 
+  box-shadow: 4px 2px #00aeef;
+  z-index: 99; 
+}
+
+.navegador {
+  max-width: 1280px;
+  margin: auto; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.navegador-logo {
+  font-size: 2rem;
+  color: #00aeef;
+}
+
+.bx-sun {
+  display: none; 
+}
+
+.bx-moon{
+  display: inline-block; 
+}
+
+.temaEscuro .bx-sun {
+  display: inline-block;
+}
+
+.temaEscuro .bx-moon {
+  display: none; 
+}
+
+.temaEscuro nav {
+  background-color: #4F4F63;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+.sudoPratico {
+  padding-top: 80px;
+}
+
+.numero {
+  width: 51.55px;
+  height: 71px;
+  border: 1px solid #000;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+
+.numero-sec {
+  background-color: aqua;
+}
+
+.pedacos {
+  width: 55.55px;
+  height: 55.55px;
+  border: 1px solid red;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pedacos-sec {
+  background-color: gainsboro; 
+}
+
+.linhaH {
+  border-bottom: 2px solid firebrick;
+}
+
+.linhaY {
+  border-right: 2px solid firebrick;
+}
+
+* {
+  padding: 0px; 
+  margin: 0px;
+  box-sizing: border-box; 
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: Sudoku, sans-serif;
+  height: 100vh; 
+  background-color: #fff; 
+  text-align: center;
+  overflow-x: hidden; 
+  user-select: none;
+}
+
+hr {
+  width: 500px;
+  margin: auto;
+}
+
+input {
+  font-family: Sudoku, sans-serif; 
+  border: 2px solid #2a2a38;
+  color: #6a6a6a; 
+}
+
+input:hover, input:focus {
+  border-color: #00aeef; 
+}
+
+a {
+  text-decoration: none;
+  color: unset; 
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
